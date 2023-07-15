@@ -1,0 +1,1 @@
+SELECT count(id_reservation) as total_room_type_reservation , id_room_type from reservation r inner join Room on Room.id_room = r.id_room GROUP BY id_room_type;
