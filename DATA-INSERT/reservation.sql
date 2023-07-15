@@ -7,7 +7,7 @@ create table reservation (
 	id_customer INT NOT NULL REFERENCES customer (id_customer),
 	id_room INT NOT NULL REFERENCES room (id_room),
 	id_user INT NOT NULL REFERENCES "user" (id_user),
-	id_reservation INT NOT NULL REFERENCES id_conference_room (id_user),
+	id_conference INT REFERENCES id_conference_room (id_conference),
 );
 insert into reservation (reservation_date, start_date_of_stay, end_date_of_stay, id_customer, id_room, id_user , is_cancelled ,id_conference_room) values ('2023-11-01', '2023-06-28', '2023-09-02', 9, 20, 5 , 't' ,null);
 insert into reservation (reservation_date, start_date_of_stay, end_date_of_stay, id_customer, id_room, id_user , is_cancelled ,id_conference_room) values ('2023-03-21', '2023-05-06', '2023-07-10', 1, 26, 1 , 't' , null);
