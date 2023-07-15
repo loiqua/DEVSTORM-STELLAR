@@ -1,0 +1,1 @@
+ select id_room_type,room_type,services,price_for_one_night from room_type where room_type ilike 'vip';
