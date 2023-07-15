@@ -1,0 +1,1 @@
+SELECT * FROM room_type ORDER BY price_of_one_night desc;
