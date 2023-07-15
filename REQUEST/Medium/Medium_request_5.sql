@@ -1,0 +1,1 @@
+ SELECT room_type ,feature_name FROM has h INNER JOIN room_type rt ON  rt.id_room_type=h.id_room_type INNER JOIN feature f  ON  f.id_feature = h.id_feature ;

@@ -1,0 +1,1 @@
+select id_hotel,room_type,price_for_one_night,services from room inner join room_type on room_type.id_room_type=room.id_room_type where room_type ilike 'double';
